@@ -1,7 +1,28 @@
 from django.contrib import admin
 
 from core.apps.products.models.products import Product
+from core.apps.products.models.categories import Category
+from core.apps.products.models.reviews import Review
+
+
+class ReviewInline(admin.TabularInline):
+    model = Review
+    extra = 0
+
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'description', 'created_at', 'updated_at', )
+    list_display = ('id', 'title', 'discription', 'created_at', 'updated_at', 'is_active')
+    inlines = (ReviewInline,)
+    
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'product')
+    list_select_related = ('product')
+
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display= ('id', 'customer', 'product', 'rating', 'comment')
+    list_select_related = ('customer', 'product')

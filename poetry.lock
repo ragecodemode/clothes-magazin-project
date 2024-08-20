@@ -3,7 +3,7 @@
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
-description = "Reusable constraint types to use with typing.Annotated"
+discription = "Reusable constraint types to use with typing.Annotated"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -14,7 +14,7 @@ files = [
 [[package]]
 name = "asgiref"
 version = "3.8.1"
-description = "ASGI specs, helper code, and adapters"
+discription = "ASGI specs, helper code, and adapters"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -28,7 +28,7 @@ tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 [[package]]
 name = "certifi"
 version = "2024.7.4"
-description = "Python package for providing Mozilla's CA Bundle."
+discription = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -39,7 +39,7 @@ files = [
 [[package]]
 name = "charset-normalizer"
 version = "3.3.2"
-description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+discription = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -138,7 +138,7 @@ files = [
 [[package]]
 name = "django"
 version = "5.0.7"
-description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
+discription = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.10"
 files = [
@@ -158,7 +158,7 @@ bcrypt = ["bcrypt"]
 [[package]]
 name = "django-environ"
 version = "0.11.2"
-description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+discription = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
 optional = false
 python-versions = ">=3.6,<4"
 files = [
@@ -174,7 +174,7 @@ testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 [[package]]
 name = "django-ninja"
 version = "1.2.2"
-description = "Django Ninja - Fast Django REST framework"
+discription = "Django Ninja - Fast Django REST framework"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -194,7 +194,7 @@ test = ["django-stubs", "mypy (==1.7.1)", "psycopg2-binary", "pytest", "pytest-a
 [[package]]
 name = "docker"
 version = "7.1.0"
-description = "A Python library for the Docker Engine API."
+discription = "A Python library for the Docker Engine API."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -216,7 +216,7 @@ websockets = ["websocket-client (>=1.3.0)"]
 [[package]]
 name = "idna"
 version = "3.7"
-description = "Internationalized Domain Names in Applications (IDNA)"
+discription = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
 python-versions = ">=3.5"
 files = [
@@ -227,7 +227,7 @@ files = [
 [[package]]
 name = "makefile"
 version = "1.1.0"
-description = "makefile is python package to read makefile variables"
+discription = "makefile is python package to read makefile variables"
 optional = false
 python-versions = "*"
 files = [
@@ -238,7 +238,7 @@ files = [
 [[package]]
 name = "psycopg2"
 version = "2.9.9"
-description = "psycopg2 - Python-PostgreSQL Database Adapter"
+discription = "psycopg2 - Python-PostgreSQL Database Adapter"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -260,7 +260,7 @@ files = [
 [[package]]
 name = "pydantic"
 version = "2.8.2"
-description = "Data validation using Python type hints"
+discription = "Data validation using Python type hints"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -282,7 +282,7 @@ email = ["email-validator (>=2.0.0)"]
 [[package]]
 name = "pydantic-core"
 version = "2.20.1"
-description = "Core functionality for Pydantic validation and serialization"
+discription = "Core functionality for Pydantic validation and serialization"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -383,7 +383,7 @@ typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 [[package]]
 name = "pywin32"
 version = "306"
-description = "Python for Window Extensions"
+discription = "Python for Window Extensions"
 optional = false
 python-versions = "*"
 files = [
@@ -406,7 +406,7 @@ files = [
 [[package]]
 name = "requests"
 version = "2.32.3"
-description = "Python HTTP for Humans."
+discription = "Python HTTP for Humans."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -427,7 +427,7 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 [[package]]
 name = "sqlparse"
 version = "0.5.1"
-description = "A non-validating SQL parser."
+discription = "A non-validating SQL parser."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -442,7 +442,7 @@ doc = ["sphinx"]
 [[package]]
 name = "typing-extensions"
 version = "4.12.2"
-description = "Backported and Experimental Type Hints for Python 3.8+"
+discription = "Backported and Experimental Type Hints for Python 3.8+"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -453,7 +453,7 @@ files = [
 [[package]]
 name = "tzdata"
 version = "2024.1"
-description = "Provider of IANA time zone data"
+discription = "Provider of IANA time zone data"
 optional = false
 python-versions = ">=2"
 files = [
@@ -464,7 +464,7 @@ files = [
 [[package]]
 name = "urllib3"
 version = "2.2.2"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
+discription = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.8"
 files = [
