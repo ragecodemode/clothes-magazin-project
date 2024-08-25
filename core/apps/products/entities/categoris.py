@@ -9,7 +9,6 @@ from core.apps.products.entities.products import Product
 class Category:
     id: int # noqa
     title: str
-    product: Product | EntityStatus = field(default_factory=EntityStatus.NOT_LOADED)
     created_at: datetime = field(
         default_factory=datetime.now,
         kw_only=True,

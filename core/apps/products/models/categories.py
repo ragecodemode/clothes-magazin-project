@@ -11,13 +11,7 @@ class Category(TimedBaseModel):
         unique=True,
         max_length=50
     )
-    product = models.ForeignKey(
-        to='products.Product',
-        verbose_name='Product',
-        related_name='products_categories',
-        on_delete=models.CASCADE,
-    )
-    
+
     def to_entity(self) -> CategoryEntity:
         return CategoryEntity(
             id=self.id,

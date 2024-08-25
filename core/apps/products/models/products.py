@@ -31,6 +31,12 @@ class Product(TimedBaseModel):
         max_length=1,
         choices=SIZES
     )
+    category  = models.ForeignKey(
+        to='categories.Category',
+        verbose_name='Category',
+        related_name='categories_products',
+        on_delete=models.CASCADE,
+    )
     
     def to_entity(self) -> ProductEntity:
         return ProductEntity(

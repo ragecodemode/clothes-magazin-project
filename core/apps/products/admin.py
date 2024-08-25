@@ -12,14 +12,14 @@ class ReviewInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'discription', 'created_at', 'updated_at', 'is_active')
+    list_display = ('id', 'title', 'discription', 'created_at', 'updated_at', 'is_active', 'category')
     inlines = (ReviewInline,)
+    list_select_related = ('product')
     
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'product')
-    list_select_related = ('product')
+    list_display = ('id', 'title')
 
 
 @admin.register(Review)
