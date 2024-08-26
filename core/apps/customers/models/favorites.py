@@ -1,4 +1,4 @@
-from django.db import models
+from django.db.models import models
 
 from core.apps.common.models import TimedBaseModel
 from core.apps.customers.entities.favorites import Favorite as FavoriteEntity

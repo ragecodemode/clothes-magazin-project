@@ -1,4 +1,4 @@
-from django.db import models
+from django.db.models import models
 
 class TimedBaseModel(models.Model):
     created_at = models.DateTimeField(

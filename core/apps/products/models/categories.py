@@ -1,7 +1,7 @@
-from django.db import models
+from django.db.models import models
 
 from core.apps.common.models import TimedBaseModel
-from core.apps.products.entities.categoris import Category as CategoryEntity
+from core.apps.products.entities.categories import Category as CategoryEntity
 
 
 class Category(TimedBaseModel):

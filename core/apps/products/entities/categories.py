@@ -2,9 +2,6 @@ from dataclasses import (dataclass, field)
 
 from datetime import datetime
 
-from core.apps.common.enums import EntityStatus
-from core.apps.products.entities.products import Product
-
 @dataclass
 class Category:
     id: int # noqa

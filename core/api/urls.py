@@ -1,7 +1,7 @@
 from django.http import HttpRequest
 from django.urls import path
 
-from core.api.schemas import PingResposnSchema
+from core.api.schemas import PingResponseSchema
 from core.api.v1.urls import router as v1_router
 
 from ninja import NinjaAPI
@@ -9,9 +9,9 @@ from ninja import NinjaAPI
 api = NinjaAPI()
 
 
-@api.get("/ping", response=PingResposnSchema)
-def ping(request: HttpRequest) -> PingResposnSchema:
-    return PingResposnSchema(result=True)
+@api.get("/ping", response=PingResponseSchema)
+def ping(request: HttpRequest) -> PingResponseSchema:
+    return PingResponseSchema(result=True)
 
 api.add_router('v1/', v1_router)
 

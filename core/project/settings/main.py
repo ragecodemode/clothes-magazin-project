@@ -23,7 +23,7 @@ INSTALLED_APPS = [
 
     # first-party apps
     'core.apps.products.apps.ProductsConfig',
-    'core.apps.cutomers.apps.CustomerConfig',
+    'core.apps.customers.apps.CustomersConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'core.project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.models.backends.postgresql',
         'NAME': env('POSTGRES_NAME'),
         'USER': env('POSTGRES_USER'),
         'PASSWORD': env('POSTGRES_PASSWORD'),
