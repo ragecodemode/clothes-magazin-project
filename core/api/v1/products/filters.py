@@ -1,9 +1,7 @@
 from ninja import Schema
 
-from core.api.filters import DefaultFilter
-
 class ProductFilters(Schema):
-    search: str | None | DefaultFilter = DefaultFilter.NOT_SET
+    search: str | None = None
 
 class CategoryFilters(Schema):
-    search: str | None | DefaultFilter = DefaultFilter.NOT_SET
+    search: str | None = None

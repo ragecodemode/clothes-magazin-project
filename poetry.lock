@@ -3,7 +3,7 @@
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
-discription = "Reusable constraint types to use with typing.Annotated"
+description = "Reusable constraint types to use with typing.Annotated"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -14,7 +14,7 @@ files = [
 [[package]]
 name = "asgiref"
 version = "3.8.1"
-discription = "ASGI specs, helper code, and adapters"
+description = "ASGI specs, helper code, and adapters"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -28,7 +28,7 @@ tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 [[package]]
 name = "certifi"
 version = "2024.7.4"
-discription = "Python package for providing Mozilla's CA Bundle."
+description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -39,7 +39,7 @@ files = [
 [[package]]
 name = "charset-normalizer"
 version = "3.3.2"
-discription = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -137,17 +137,17 @@ files = [
 
 [[package]]
 name = "django"
-version = "5.0.7"
-discription = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
+version = "5.1"
+description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "Django-5.0.7-py3-none-any.whl", hash = "sha256:f216510ace3de5de01329463a315a629f33480e893a9024fc93d8c32c22913da"},
-    {file = "Django-5.0.7.tar.gz", hash = "sha256:bd4505cae0b9bd642313e8fb71810893df5dc2ffcacaa67a33af2d5cd61888f2"},
+    {file = "Django-5.1-py3-none-any.whl", hash = "sha256:d3b811bf5371a26def053d7ee42a9df1267ef7622323fe70a601936725aa4557"},
+    {file = "Django-5.1.tar.gz", hash = "sha256:848a5980e8efb76eea70872fb0e4bc5e371619c70fffbe48e3e1b50b2c09455d"},
 ]
 
 [package.dependencies]
-asgiref = ">=3.7.0,<4"
+asgiref = ">=3.8.1,<4"
 sqlparse = ">=0.3.1"
 tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 
@@ -158,7 +158,7 @@ bcrypt = ["bcrypt"]
 [[package]]
 name = "django-environ"
 version = "0.11.2"
-discription = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
 optional = false
 python-versions = ">=3.6,<4"
 files = [
@@ -173,13 +173,13 @@ testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 
 [[package]]
 name = "django-ninja"
-version = "1.2.2"
-discription = "Django Ninja - Fast Django REST framework"
+version = "1.3.0"
+description = "Django Ninja - Fast Django REST framework"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "django_ninja-1.2.2-py3-none-any.whl", hash = "sha256:ca38d410359439d927fa0f59b265c2badb86200d3e534f6ed98e8ca1f5866c97"},
-    {file = "django_ninja-1.2.2.tar.gz", hash = "sha256:757197b5e238d4ac2256ecf1a7d8f5c1883e1890ad154f2f38ee7d7ed687b9a2"},
+    {file = "django_ninja-1.3.0-py3-none-any.whl", hash = "sha256:f58096b6c767d1403dfd6c49743f82d780d7b9688d9302ecab316ac1fa6131bb"},
+    {file = "django_ninja-1.3.0.tar.gz", hash = "sha256:5b320e2dc0f41a6032bfa7e1ebc33559ae1e911a426f0c6be6674a50b20819be"},
 ]
 
 [package.dependencies]
@@ -189,12 +189,12 @@ pydantic = ">=2.0,<3.0.0"
 [package.extras]
 dev = ["pre-commit"]
 doc = ["markdown-include", "mkdocs", "mkdocs-material", "mkdocstrings"]
-test = ["django-stubs", "mypy (==1.7.1)", "psycopg2-binary", "pytest", "pytest-asyncio", "pytest-cov", "pytest-django", "ruff (==0.4.2)"]
+test = ["django-stubs", "mypy (==1.7.1)", "psycopg2-binary", "pytest", "pytest-asyncio", "pytest-cov", "pytest-django", "ruff (==0.5.7)"]
 
 [[package]]
 name = "docker"
 version = "7.1.0"
-discription = "A Python library for the Docker Engine API."
+description = "A Python library for the Docker Engine API."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -215,19 +215,19 @@ websockets = ["websocket-client (>=1.3.0)"]
 
 [[package]]
 name = "idna"
-version = "3.7"
-discription = "Internationalized Domain Names in Applications (IDNA)"
+version = "3.8"
+description = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 files = [
-    {file = "idna-3.7-py3-none-any.whl", hash = "sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"},
-    {file = "idna-3.7.tar.gz", hash = "sha256:028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc"},
+    {file = "idna-3.8-py3-none-any.whl", hash = "sha256:050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac"},
+    {file = "idna-3.8.tar.gz", hash = "sha256:d838c2c0ed6fced7693d5e8ab8e734d5f8fda53a039c0164afb0b82e771e3603"},
 ]
 
 [[package]]
 name = "makefile"
 version = "1.1.0"
-discription = "makefile is python package to read makefile variables"
+description = "makefile is python package to read makefile variables"
 optional = false
 python-versions = "*"
 files = [
@@ -238,7 +238,7 @@ files = [
 [[package]]
 name = "psycopg2"
 version = "2.9.9"
-discription = "psycopg2 - Python-PostgreSQL Database Adapter"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -260,7 +260,7 @@ files = [
 [[package]]
 name = "pydantic"
 version = "2.8.2"
-discription = "Data validation using Python type hints"
+description = "Data validation using Python type hints"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -282,7 +282,7 @@ email = ["email-validator (>=2.0.0)"]
 [[package]]
 name = "pydantic-core"
 version = "2.20.1"
-discription = "Core functionality for Pydantic validation and serialization"
+description = "Core functionality for Pydantic validation and serialization"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -383,7 +383,7 @@ typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 [[package]]
 name = "pywin32"
 version = "306"
-discription = "Python for Window Extensions"
+description = "Python for Window Extensions"
 optional = false
 python-versions = "*"
 files = [
@@ -406,7 +406,7 @@ files = [
 [[package]]
 name = "requests"
 version = "2.32.3"
-discription = "Python HTTP for Humans."
+description = "Python HTTP for Humans."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -427,7 +427,7 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 [[package]]
 name = "sqlparse"
 version = "0.5.1"
-discription = "A non-validating SQL parser."
+description = "A non-validating SQL parser."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -442,7 +442,7 @@ doc = ["sphinx"]
 [[package]]
 name = "typing-extensions"
 version = "4.12.2"
-discription = "Backported and Experimental Type Hints for Python 3.8+"
+description = "Backported and Experimental Type Hints for Python 3.8+"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -453,7 +453,7 @@ files = [
 [[package]]
 name = "tzdata"
 version = "2024.1"
-discription = "Provider of IANA time zone data"
+description = "Provider of IANA time zone data"
 optional = false
 python-versions = ">=2"
 files = [
@@ -464,7 +464,7 @@ files = [
 [[package]]
 name = "urllib3"
 version = "2.2.2"
-discription = "HTTP library with thread-safe connection pooling, file post, and more."
+description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -481,4 +481,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "1b64b7c3537843d4fb74b04ec40095998f8fd173eb300b66bbe5a8f82c9b14ac"
+content-hash = "d98f0e9b5dc90ee9238ed296e586890ff349d31b17d2a1a6f94994bf544b2772"

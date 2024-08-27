@@ -1,5 +1,5 @@
 from django.core.validators import MinValueValidator
-from django.db.models import models
+from django.db import models
 
 from core.apps.common.models import TimedBaseModel
 from core.apps.common.constants import PRICE, SIZES
