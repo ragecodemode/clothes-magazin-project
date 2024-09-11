@@ -44,6 +44,5 @@ class Customer(TimedBaseModel):
         )
 
     class Meta:
-        ordering= ('id')
-        verbose_name = 'Пользователь'
-        verbose_name_plural = 'Пользователи'
+        verbose_name = 'Customer'
+        verbose_name_plural = 'Customers'

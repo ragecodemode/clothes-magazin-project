@@ -2,6 +2,7 @@ from django.db import models
 
 from core.apps.common.models import TimedBaseModel
 from core.apps.products.entities.categories import Category as CategoryEntity
+from core.apps.products.entities.products import Product as ProductEntity
 
 
 class Category(TimedBaseModel):
@@ -11,6 +12,22 @@ class Category(TimedBaseModel):
         unique=True,
         max_length=50
     )
+    product = models.ForeignKey(
+        to='products.Product',
+        verose_name='Product',
+        related_name='products_categories',
+        on_delete=models.CASCADE
+    )
+    
+    @classmethod
+    def from_entity(
+        cls,
+        product: ProductEntity,
+    ) -> 'Category':
+        return cls(
+            id=product.id,
+            title=product.title,
+        )
 
     def to_entity(self) -> CategoryEntity:
         return CategoryEntity(
@@ -24,5 +41,5 @@ class Category(TimedBaseModel):
         return self.title
     
     class Meta:
-        verbose_name = 'Категория'
-        verbose_name_plural = 'Категории'
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'

@@ -2,13 +2,15 @@ from django.db import models
 
 from core.apps.common.models import TimedBaseModel
 from core.apps.customers.entities.favorites import Favorite as FavoriteEntity
+from core.apps.products.entities.products import Product as ProductEntity
+from core.apps.customers.entities.customers import Customer as CustomerEntity
 
 class Favorite(TimedBaseModel):
     """Модель для избранных товаров."""
     customer = models.ForeignKey(
         to='customers.Customer',
         verbose_name='Customer',
-        related_name='cutomer_favorite',
+        related_name='product_favorite',
         on_delete=models.CASCADE,
     )
     product = models.ForeignKey(
@@ -17,6 +19,17 @@ class Favorite(TimedBaseModel):
         related_name='product_favorite',
         on_delete=models.CASCADE,
     )
+    
+    @classmethod
+    def from_entity(
+        cls,
+        product: ProductEntity,
+        customer: CustomerEntity
+    ) -> 'Favorite':
+        return cls(
+            product=product.id,
+            cutomer=customer.id,
+        )
     
     def to_entity(self) -> FavoriteEntity:
         return FavoriteEntity(
@@ -27,8 +40,8 @@ class Favorite(TimedBaseModel):
     
     class Meta:
         ordering = ('id',)
-        verbose_name = 'Избранный товар'
-        verbose_name_plural = 'Избранные товары'
+        verbose_name = 'Favorite'
+        verbose_name_plural = 'Favorites'
         unique_together = (
             ('customer', 'product'),
         )

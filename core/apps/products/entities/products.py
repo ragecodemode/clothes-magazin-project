@@ -5,8 +5,6 @@ from dataclasses import (
 from datetime import datetime
 
 from core.apps.common.constants import PRICE
-from core.apps.common.enums import EntityStatus
-from core.apps.products.entities.categories import Category
 from core.apps.products.exceptions.products import InvalidProduct
 
 @dataclass
@@ -16,7 +14,6 @@ class Product:
     discription: str
     price: int = field(default=PRICE)
     size: list[str] = field(default_factory=list)
-    category: Category | EntityStatus = field(default_factory=EntityStatus.NOT_LOADED)
     created_at: datetime = field(
         default_factory=datetime.now,
         kw_only=True,

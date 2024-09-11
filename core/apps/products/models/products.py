@@ -2,8 +2,10 @@ from django.core.validators import MinValueValidator
 from django.db import models
 
 from core.apps.common.models import TimedBaseModel
-from core.apps.common.constants import PRICE, SIZES
+from core.apps.common.constants import PRICE
 from core.apps.products.entities.products import Product as ProductEntity
+from core.apps.products.entities.categories import Category as CategoryEntity
+from core.apps.products.models.categories import Category
 
 
 class Product(TimedBaseModel):
@@ -22,20 +24,15 @@ class Product(TimedBaseModel):
     )
     price = models.IntegerField(
         verbose_name='Цена',
-        validators=(MinValueValidator(PRICE),),
-        error_messages={"errors": "Цена не может быть отрицательной!"},
+        validators=(
+            MinValueValidator(PRICE),
+        ),
+        error_messages={"errors": "Цена не может быть отрицательной"},
         default=PRICE,
     )
     size = models.CharField(
         verbose_name='Размер',
         max_length=1,
-        choices=SIZES
-    )
-    category  = models.ForeignKey(
-        to='categories.Category',
-        verbose_name='Category',
-        related_name='categories_products',
-        on_delete=models.CASCADE,
     )
     
     def to_entity(self) -> ProductEntity:
@@ -53,5 +50,5 @@ class Product(TimedBaseModel):
         return self.title
     
     class Meta:
-        verbose_name = 'Продукт'
-        verbose_name_plural = 'Продукты'
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
